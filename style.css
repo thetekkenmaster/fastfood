@@ -35,11 +35,12 @@
 		opacity: 0;
 	}
 }
-html, body {
-	overflow-x: none;
+body {
+	overflow-x: hidden;
 	background-color: gold;
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 * {
 	margin: 0;
@@ -137,14 +138,15 @@ nav {
 }
 #about {
 	width: 50%;
-	height: 800px;
+	min-height: 800px;
+	height: auto;
 	margin: 0 auto;
 	background-color: #fff;
 	border: 3px solid #b22222;
 	border-radius: 20px 20px 20px 20px;
 	padding: 20px;
 	position: relative; 
-	top: -195px;
+	top: -150px;
 }
 #about h1 {
 	text-align: center;
@@ -155,8 +157,6 @@ nav {
 	position: relative;
 	top: 95px;
 	font-size: 1.5em;
-	padding-left: 5px;
-	padding-right: 20px;
 }
 footer {
 	width: 100%;
@@ -205,10 +205,6 @@ hr {
 #MC {
 	text-align: center;
 }
-/*#cla {
-	position: relative;
-	bottom: -75px;
-}*/
 h3 {
 	position: relative;
 	text-align: center;
@@ -224,4 +220,11 @@ h3 {
 	position: relative;
 	top: 140px;
 	margin: 20px;
+}
+
+/* media queries */
+@media screen and (max-width: 720px) {
+	  #about{
+		  width: 80%;
+	}
 }
