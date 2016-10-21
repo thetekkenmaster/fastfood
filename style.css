@@ -230,8 +230,7 @@ h3 {
 	width: 100%;
 	}
 	.vintage {
-		width: 600px;
-		height: 400px;
+		display: none;
 	}
 	#about {
 		width: 90%;
