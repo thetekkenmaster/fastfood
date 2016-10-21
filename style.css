@@ -123,7 +123,7 @@ nav {
 }
 /*The about page content is underneath this sentence.*/
 .vintage {
-	width: 100%;
+	width: 1000px;
 	height: 730px;
 	background-image: url(vintagemcdonalds.jpg);
 	background-repeat: no-repeat;
