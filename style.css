@@ -55,7 +55,7 @@ body {
 ul {
 	text-align: center;
 	position: relative;
-	top: -20px;
+	top: 20px;
 }
 li {
 	display: inline-block;
@@ -63,7 +63,7 @@ li {
 	font-size: 1.4em;
 	font-weight: bold;
 	font-family: arial rounded mt;
-	padding: 50px;
+	padding-right: 50px;
 }
 li a {
 	color: #fff;
@@ -228,6 +228,9 @@ h3 {
 @media screen and (max-width: 720px) {
 	#about {
 		width: 90%;
+	}
+	.vintage {
+		width: 600px;
 	}
 }
 
