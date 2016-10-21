@@ -225,7 +225,7 @@ h3 {
 
 /* media queries */
 @media screen and (max-width: 720px) {
-	  #about{
-		  width: 80%;
+	  .layer1, .layer2, .layer3{
+		  background-image: no-repeat center center fixed;
 	}
 }
