@@ -36,12 +36,12 @@
 	}
 }
 body {
+	width: 100%;
 	overflow-x: hidden;
 	background-color: gold;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	overflow-x: hidden;
 }
 * {
 	margin: 0;
@@ -72,7 +72,7 @@ li img {
 	border-radius: 45px;
 }
 nav {
-	width: 100%;
+	width: 1300px%;
 	height: 150px;
 	background-color: #b22222;
 	margin-bottom: 0;
@@ -226,4 +226,8 @@ h3 {
 
 /* media queries */
 @media screen and (max-width: 720px) {
+	#about {
+		width: 90%;
+	}
 }
+
