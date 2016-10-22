@@ -43,17 +43,19 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body {
 	width: 100%;
 	overflow-x: none;
 	background-color: gold;
 	margin: 0;
 	padding: 0;
-}
-* {
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
 }
 #wrapper {
 	min-height: 100%;
@@ -94,7 +96,8 @@ nav {
 .layer1, .layer2, .layer3 {
 	position: absolute;
 	width: 100%;
-	height: 1150px;
+	min-height: 1150px;
+	height: 100%;
 	top: 0;
 	left: 0;
 	background-size: cover;
@@ -123,6 +126,7 @@ nav {
 	position: relative;
 	font-size: 6vw;
 	font-family: comic sans ms;
+	font-weight: bold;
 	color: #fff;
 	text-shadow: 3px 3px 6px #000;
 	text-align: center;
@@ -170,6 +174,8 @@ nav {
 footer {
 	width: 100%;
 	height: 400px;
+	position: relative;
+	top: 60px;
 	background-color: #b22222;
 }
 .mcClassics {
@@ -211,6 +217,13 @@ hr {
 	height: 177px;
 	border: 3px solid grey;
 }
+.mcd {
+    display: block;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+}
 #MC {
 	text-align: center;
 }
@@ -224,6 +237,7 @@ h3 {
 	width: 50%;
 	margin: 0 auto;
 	font-size: 2em;
+	padding: 10px;
 }
 .one {
 	position: relative;
@@ -232,27 +246,148 @@ h3 {
 }
 
 /* media queries */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 1564px) {
+		#about h1{
+			text-align: center;
+			position: relative;
+			top: 10px;
+		}
+		#about p {
+			position: relative;
+			top: 25px;
+			font-size: 1.5em;
+		}
+	}
+@media screen and (max-width: 1069px) {
+		.classics {
+			display: none;
+		}
+		.mc {
+			margin: 0 auto;
+		}
+}
+@media screen and (max-width: 1000px) {
+	.vintage {
+		width: 100%;
+		height: 400px;
+		background-repeat: no repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+	.vintage p {
+		font-size: 3em;
+	}
+}
+@media screen and (max-width: 900px) {
+	.classicsContent {
+		width: 95%;
+	}
+}
+@media screen and (max-width: 842px) {
+	.one {
+		display: block;
+	}
+}
+@media screen and (max-width: 744px) {
+	.contactParagraph  {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 720px) {
+	#about {
+		width: 65%;
+	}
+	.contactParagraph  {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 580px) {
+	#about {
+		width: 75%;
+	}
+	.contactParagraph {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 536px) {
+	
+}
+@media screen and (max-width: 480px) {
 	body {
-	overflow-x: none;
+		background-color: white;
+	}
+	nav li{
+		display: block;
+		width: 100%;
+		border-bottom: white;
+		padding: 10px;
 	}
 	nav {
 		width: 100%;
+		height: 273px;
+	}
+	.layer1, .layer2, .layer3 {
+		min-height: 250px;
+		height: 100%;
 	}
 	.vintage {
-		width: 400px;
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+	.vintage p {
+		font-size: 2em;
 	}
-	
 	#about h1 {
-	font-size: .1em;
-	}
+	font-size: 2em;
+	position: relative;
+	top: 10px;
+}
 	#about p {
 	position: relative;
-	top: 95px;
-	font-size: .5em;
+	top: 25px;
+	font-size: 1.5em;
 	}
 	#about {
-		width: 90%;
+		width: 100%;
+		position: relative;
+		top: 0;
+		border: none;
+	}
+	.one {
+		padding: 0;
+	}
+	.contactParagraph {
+		width: 100%;
+	}
+	.mcClassics {
+		color: #000;
+	}
+	.classics {
+		display: none;
+	}
+	.classicsContent {
+		padding: 10px;
+		font-size: 1.5em;
+	}
+	.contactParagraph {
+    margin: 0 auto;
+    font-size: 1.5em;
+    padding: 5px;
+    text-align: center;
+}
+	footer {
 	}
 }
-
+@media screen and (max-width: 370px) {
+	#vintage {
+		width: 100%;
+		height: 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.contactParagraph {
+		width: 100%;
+	}
+}
