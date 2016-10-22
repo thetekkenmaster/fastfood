@@ -35,13 +35,20 @@
 		opacity: 0;
 	}
 }
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 body {
 	width: 100%;
 	overflow-x: none;
 	background-color: gold;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 * {
 	margin: 0;
@@ -227,13 +234,13 @@ h3 {
 /* media queries */
 @media screen and (max-width: 720px) {
 	nav {
-	width: 100%;
+		width: 100%;
 	}
 	.vintage {
-		display: none;
+		width: 600px;
 	}
 	#about {
-		width: 100%;
+		width: 90%;
 	}
 }
 
