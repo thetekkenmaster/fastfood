@@ -361,6 +361,8 @@ h3 {
 	}
 	.menu-trigger {
 		display: block;
+		background-color: gold;
+		border-bottom: 1px solid #b22222;
 	}
 	header {
 		height: 110px;
