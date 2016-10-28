@@ -223,6 +223,9 @@ hr {
 .classicsContent h2 {
 	text-align: center;
 }
+.classicsContent p {
+	text-align: justify;
+}
 .classics {
 	width: 50%;
 	position: relative;
@@ -244,7 +247,6 @@ hr {
     height: 250px;
     position: relative;
     margin: 0 auto;
-    /* left: -12%; */
 }
 #MC {
 	text-align: center;
@@ -423,12 +425,13 @@ h3 {
 		color: #000;
 	}
 	.mcd {
-		left: -12%;
+		/* left: -12%; */
 	}
 	.classics {
 		display: none;
 	}
 	.classicsContent {
+		width: 100%;
 		padding: 10px;
 		font-size: 1.5em;
 	}
