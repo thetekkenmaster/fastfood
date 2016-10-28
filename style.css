@@ -244,6 +244,7 @@ hr {
     height: 250px;
     position: relative;
     margin: 0 auto;
+    left: -16%;
 }
 #MC {
 	text-align: center;
