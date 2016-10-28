@@ -265,9 +265,6 @@ h3 {
 	top: 140px;
 	margin: 20px;
 }
-.menu-trigger {
-	display: none;
-}
 /* media queries */
 @media screen and (max-width: 1564px) {
 		#about h1{
@@ -294,8 +291,8 @@ h3 {
 		display: none;
 	}
 	header img {
-		position: relative;
-		left: 0%;
+    position: static;
+}
 	}
 	.vintage {
 		width: 100%;
@@ -324,6 +321,23 @@ h3 {
 @media screen and (max-width: 744px) {
 	.contactParagraph  {
 		width: 100%;
+	}
+	nav {
+		height: auto;
+		display: block;
+	}
+	nav ul {
+		position: relative;
+		top: 8px;
+
+	}
+		nav ul li{
+		width: 100%;
+		border-bottom: 2px solid #d5dce4;
+		font-size: 1.3em;
+	}
+	nav li:last-child {
+		border-bottom: none;
 	}
 }
 @media screen and (max-width: 721px) {
@@ -359,41 +373,19 @@ h3 {
 	body {
 		background-color: white;
 	}
-	.menu-trigger {
-		display: block;
-		background-color: gold;
-		border-bottom: 1px solid #b22222;
-	}
 	header {
 		height: 110px;
 	}
 	header img {
-		position: relative;
-		left: 0%;
-	}
-	nav {
-		height: 78px;
-	}
-	nav ul {
-		position: relative;
-		top: 8px;
-
-	}
-		nav ul li{
-		display: block;
-		width: 100%;
-		border-bottom: 2px solid #d5dce4;
-		font-size: 1.3em;
-	}
-	nav li:last-child {
-		border-bottom: none;
-	}
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 10px;
+    left: 1%;
+}
 	.layer1, .layer2, .layer3 {
 		min-height: 250px;
 		height: 100%;
-	}
-	nav li {
-		display: none;
 	}
 	.vintage {
     width: 100%;
